@@ -13,6 +13,7 @@ module.exports = {
       },
       backgroundImage: {
         'home': "url('/assets/bg-home.webp')",
+        'hero': "url('/assets/bg-search.webp')"
       }
     },
   },

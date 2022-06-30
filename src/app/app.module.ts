@@ -12,15 +12,20 @@ import {MatIcon, MatIconModule} from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import {MatCardModule} from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
  
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GameComponent } from './game/game.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     GameComponent,
+    HeroComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,9 @@ import { GameComponent } from './game/game.component';
     MatIconModule,
     HttpClientModule,
     DragDropModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

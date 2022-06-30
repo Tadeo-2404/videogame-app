@@ -13,7 +13,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this._sg.obtenerJuegos().subscribe((resp:any) => {
       this.juegos = resp.results
-      console.log(this.juegos)
     })
   }
 

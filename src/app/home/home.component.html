@@ -1,5 +1,7 @@
-<div class="bg-home bg-no-repeat p-4 md:bg-cover sm:bg-cover lg:bg-cover xl:bg-cover md:bg-center lg:bg-center xl:bg-center h-screen">
-   <h1 class="text-center text-white">Most Popular Right Now</h1>
+<div>
+   <app-hero></app-hero>
+ <div class="bg-home bg-no-repeat p-4 md:bg-cover sm:bg-cover lg:bg-cover xl:bg-cover md:bg-center lg:bg-center xl:bg-center h-full">
+   <h1 class="text-center text-white text-4xl mt-10 mb-10">Most Popular Right Now</h1>
    <div class="sm:grid sm:grid-cols-1 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 xl:grid xl:grid-cols-5 gap-y-8 justify-items-center">
       <mat-card *ngFor="let juego of juegos" class="bg-gray-800 flex justify-center flex-col w-48 shadow-2xl rounded-3xl" tabindex="-1">
          <img mat-card-lg-image src={{juego.background_image}} class="w-full" alt="game-img">
@@ -15,4 +17,5 @@
          </mat-card-actions>
       </mat-card>
    </div>
+</div>  
 </div>
