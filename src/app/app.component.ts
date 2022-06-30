@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'puta-app';
+  sm: any = window.matchMedia('(max-width: 767px)');
 }
