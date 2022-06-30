@@ -1,0 +1,19 @@
+<div class="bg-white p-4 h-full overflow-scroll">
+  <div class="text-center flex flex-col justify-center items-center gap-y-4 mt-8 lg:grid xl:grid lg:grid-cols-2 xl:grid-cols-2">
+    <img src={{juego.background_image_additional}} alt="img-game" class="h-full p-8">
+    <div class="lg:p-3 xl:p-3 lg:flex lg:flex-col lg:gap-y-4 xl:flex xl:flex-col xl:gap-y-4 sm:gap-y-4">
+      <h1 class="text-4xl font-semibold">{{juego.name}}</h1>
+      <p>{{juego.released}}</p>
+      <div class="lg:flex xl:flex md:flex sm:flex sm:flex-col sm:justify-center sm:items-center sm:gap-y-4 mt-4 mb-4">
+        <div class="flex w-full justify-around sm:flex-col sm:justify-center sm:items-center sm:gap-y-4">
+            <p *ngFor="let genre of juego.genres" class="p-2 w-fit bg-red-600 text-white rounded-lg">{{genre.name}}</p>
+          </div>
+          <div class="flex w-full justify-around sm:flex-col sm:justify-center sm:items-center sm:gap-y-4">
+            <p *ngFor="let developer of juego.developers" class="bg-yellow-500 p-2 w-fit text-white rounded-lg">
+              {{developer.name}}</p>
+          </div>
+      </div>
+      <p class="lg:p-4 xl:p-4">{{juego.description_raw}}</p>
+    </div>
+  </div>
+</div>

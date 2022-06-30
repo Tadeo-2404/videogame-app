@@ -14,11 +14,13 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import {MatCardModule} from '@angular/material/card';
  
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GameComponent } from './game/game.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    GameComponent,
   ],
   imports: [
     BrowserModule,
