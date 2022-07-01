@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GameComponent } from './game/game.component';
 import { HeroComponent } from './hero/hero.component';
 import { PopularTodayComponent } from './popular-today/popular-today.component';
+import { PopularWeekComponent } from './popular-week/popular-week.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { PopularTodayComponent } from './popular-today/popular-today.component';
     GameComponent,
     HeroComponent,
     PopularTodayComponent,
+    PopularWeekComponent,
   ],
   imports: [
     BrowserModule,
