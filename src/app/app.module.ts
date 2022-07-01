@@ -24,6 +24,7 @@ import { PopularWeekComponent } from './popular-week/popular-week.component';
 import { PopularMonthComponent } from './popular-month/popular-month.component';
 import { UpcomingComponent } from './upcoming/upcoming.component';
 import { GoBackBtnComponent } from './go-back-btn/go-back-btn.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { GoBackBtnComponent } from './go-back-btn/go-back-btn.component';
     PopularMonthComponent,
     UpcomingComponent,
     GoBackBtnComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
