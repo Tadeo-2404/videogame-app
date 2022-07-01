@@ -44,13 +44,13 @@
   </mat-drawer>
 
   <mat-drawer-content class="text-black">
-    <div class="absolute top-4 left-4 z-10">
+    <div class="fixed top-4 left-4 z-10">
       <button mat-icon-button aria-label="Example icon button with a menu icon" type="button"
         mat-raised-button class="bg-yellow-500" (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
     </div>
-
     <router-outlet></router-outlet>
+    <app-go-back-btn></app-go-back-btn>
   </mat-drawer-content>
 </mat-drawer-container>

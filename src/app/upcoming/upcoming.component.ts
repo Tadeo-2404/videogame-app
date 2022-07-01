@@ -31,7 +31,6 @@ export class UpcomingComponent implements OnInit {
   ngOnInit(): void {
     this._sg.obtenerPopular(this.formatDate(this.today), this.formatDate(this.next)).subscribe((resp:any) => {
       this.juegos = resp.results
-      console.log(this.juegos)
       this.loading = false
     })
   }
