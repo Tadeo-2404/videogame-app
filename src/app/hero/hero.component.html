@@ -14,7 +14,10 @@
     </form>
     <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
     <div *ngIf="fail" class="bg-red-600 w-fit p-2 flex justify-center flex-col items-center mt-4 text-center">
-        <h1 class="text-white uppercase">Error</h1>
+        <div class="flex justify-center items-center">
+          <h1 class="text-white uppercase mr-5">Error</h1>
+          <mat-icon class="text-white">error</mat-icon>
+        </div>
         <p class="text-white">Your search throw not results, please make sure you typed correctly and try again</p>
       </div>
   </div>

@@ -1,14 +1,21 @@
 <mat-drawer-container class="h-screen">
   <mat-drawer #sidenav mode="over" class="p-3 w-44 bg-black text-white flex flex-col justify-center content-center">
     <div class="flex justify-center mt-4">
-      <h3 class="text-center text-xs">VideoGamesApp</h3>
+      <h3 class="text-center text-lg">VideoGamesApp</h3>
     </div>
     <div>
-      <ul class="flex justify-center mt-4">
-        <li>
+      <ul class="flex flex-col justify-center items-center mt-4">
+        <li class="mb-4">
           <a routerLink="/" class="flex content-center items-center gap-x-3">
             <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
             Home
+          </a>
+        </li>
+        <mat-divider class="bg-white max-h-fit w-full"></mat-divider>
+        <li class="mt-4">
+          <a routerLink="/popular-today" class="flex content-center items-center gap-x-3">
+            <mat-icon aria-hidden="false" aria-label="Example home icon">videogame_asset</mat-icon>
+            Today's Games
           </a>
         </li>
       </ul>

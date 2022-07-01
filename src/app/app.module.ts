@@ -19,6 +19,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GameComponent } from './game/game.component';
 import { HeroComponent } from './hero/hero.component';
+import { PopularTodayComponent } from './popular-today/popular-today.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HeroComponent } from './hero/hero.component';
     HomeComponent,
     GameComponent,
     HeroComponent,
+    PopularTodayComponent,
   ],
   imports: [
     BrowserModule,

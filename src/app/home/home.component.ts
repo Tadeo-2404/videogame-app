@@ -8,11 +8,13 @@ import { GamesService } from '../services/games.services';
 })
 export class HomeComponent implements OnInit {
   juegos:any[] = [];
+  loading: boolean = true;
   constructor(private _sg:GamesService) { }
 
   ngOnInit(): void {
     this._sg.obtenerJuegos().subscribe((resp:any) => {
       this.juegos = resp.results
+      this.loading = false
     })
   }
 
