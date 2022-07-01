@@ -1,0 +1,19 @@
+<div class="bg-home bg-no-repeat p-4 md:bg-cover sm:bg-cover lg:bg-cover xl:bg-cover md:bg-center lg:bg-center xl:bg-center h-full overflow-scroll">
+    <h1 class="text-center text-white text-4xl mt-10 mb-10">Next Year Releases</h1>
+    <mat-progress-bar mode="indeterminate" *ngIf="loading" class="mat-progress-bar-buffer"></mat-progress-bar>
+    <div class="sm:grid sm:grid-cols-1 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 xl:grid xl:grid-cols-5 gap-y-8 justify-items-center">
+       <mat-card *ngFor="let juego of juegos" class="bg-gray-800 flex justify-center flex-col w-48 shadow-2xl rounded-3xl" tabindex="-1">
+          <img mat-card-lg-image src={{juego.background_image}} class="w-full" alt="game-img">
+          <mat-card-header class="mt-2 flex flex-col justify-center content-center items-center text-center">
+             <mat-card-title>{{juego.name}}</mat-card-title>
+             <mat-card-subtitle>Released: <br> {{juego.released}}</mat-card-subtitle>
+          </mat-card-header>
+          <div class="text-center flex flex-col justify-center p-2">
+             <p *ngFor="let platform of juego.parent_platforms">{{platform.platform.name}}</p>
+          </div>
+          <mat-card-actions>
+             <button class="bg-yellow-500 text-black font-medium uppercase p-2 w-full" [routerLink]="['/game/', juego.slug]">See details</button>
+          </mat-card-actions>
+       </mat-card>
+    </div>
+ </div>  

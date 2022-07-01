@@ -22,6 +22,7 @@ import { HeroComponent } from './hero/hero.component';
 import { PopularTodayComponent } from './popular-today/popular-today.component';
 import { PopularWeekComponent } from './popular-week/popular-week.component';
 import { PopularMonthComponent } from './popular-month/popular-month.component';
+import { UpcomingComponent } from './upcoming/upcoming.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { PopularMonthComponent } from './popular-month/popular-month.component';
     PopularTodayComponent,
     PopularWeekComponent,
     PopularMonthComponent,
+    UpcomingComponent,
   ],
   imports: [
     BrowserModule,
