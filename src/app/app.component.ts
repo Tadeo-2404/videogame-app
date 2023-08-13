@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'puta-app';
+  title = 'video-game-app';
   sm: any = window.matchMedia('(max-width: 767px)');
 }
